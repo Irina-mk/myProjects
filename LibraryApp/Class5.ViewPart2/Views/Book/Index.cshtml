@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@model List<Book>
+<h2>All books</h2>
+
+<hr />
+<a asp-controller="Book" asp-action="Create">Add new book</a>
+<br />
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Author</th>
+            <th>Availability</th>
+            <th>Action</th>
+             
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            string availability = book.IsAvailable ? "Available" : "Taken";
+
+        <tr>
+            <td>@book.Id</td>
+            <td>
+
+                @Html.ActionLink(book.Title, "Details", "Book", new { id = book.Id })
+            </td>
+            <td>@book.Genre</td>
+            <td>@book.Author.FullName</td>
+            <td>
+                @availability
+            </td>
+            <td><a href="@Url.Action("Edit", new { id = book.Id })"><i class="glyphicon glyphicon-pencil"></i></a></td>
+            <td><a href="@Url.Action("Delete", new { id = book.Id })"><i class="glyphicon glyphicon-trash"></i></a></td>
+
+        </tr>
+        }
+    </tbody>
+</table>

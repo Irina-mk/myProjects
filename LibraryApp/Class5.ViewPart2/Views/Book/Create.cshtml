@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+@model BookCreateViewModel
+
+
+<h2>Create</h2>
+<hr />
+
+@using (Html.BeginForm("Create", "Book", FormMethod.Post))
+{
+
+    @Html.LabelFor(x => x.Title)
+    @Html.TextBoxFor(x => x.Title)
+    <br />
+
+
+    @Html.LabelFor(x => x.ISBN)
+    @Html.TextBoxFor(x => x.ISBN)
+    <br />
+
+
+    @Html.LabelFor(x => x.AuthorFullName)
+    @Html.TextBoxFor(x => x.AuthorFullName)
+    <br />
+
+
+    @Html.LabelFor(x => x.AuthorAge)
+    @Html.TextBoxFor(x => x.AuthorAge)
+
+    <br />
+
+    @Html.LabelFor(x => x.Genre)
+    @Html.DropDownListFor(x => x.Genre, Html.GetEnumSelectList(Model.Genre.GetType()), "--Select genre--")
+    <br />
+
+
+    @Html.LabelFor(x => x.isAvailable)
+    @Html.CheckBoxFor(x => x.isAvailable)
+
+    <br/>
+    <input type="submit" value="Add"/>
+}
+

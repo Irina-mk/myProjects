@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+@model BookDetailsViewModel
+
+
+
+<h2>
+    @*@Html.Display("Title");*@
+    @Html.LabelFor(x => x.Title)
+    @Html.DisplayFor(x => x.Title)
+
+</h2>
+<hr />
+
+@Html.HiddenFor(x => x.Id)
+
+
+@Html.LabelFor(x => x.AuthorsFullName)
+<p> @Html.DisplayFor(x => x.AuthorsFullName)</p>
+@Html.LabelFor(x => x.Genre)
+<p>@Html.DisplayFor(x => x.Genre)</p>
+
+
