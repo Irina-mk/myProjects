@@ -1,0 +1,27 @@
+﻿
+
+ 
+@model OrderListViewModel
+
+
+ <h1>@ViewBag.Title</h1>
+
+<p>This is the order page!</p>
+<h3>Our first pizza ever to be delivered was:</h3>
+<p> @Model.FirstPizza</p>
+
+<h3>Our first customer was:</h3>
+<h3>@Model.FirstCustomerName</h3>
+
+<h3>Total orders since we started delivering:</h3>
+<p>@Model.NumberOfOrders</p>
+
+<ul>
+    @foreach (var order in Model.Orders)
+    {
+        <partial name="_OrderItem" for="@order" />
+
+    }
+
+
+</ul>

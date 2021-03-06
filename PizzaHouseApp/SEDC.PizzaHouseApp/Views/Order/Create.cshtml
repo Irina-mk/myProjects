@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+@model OrderViewModel
+
+<h1>Order a pizza</h1>
+<h4 style="color:red">@ViewBag.Error</h4>
+<p>Please enter the correct data to order pizza!</p>
+
+
+<form asp-controller="Order" asp-action="Create" method="post">
+    <h3>User info:</h3>
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName" />
+    <br />
+
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName" />
+    <br />
+
+    <label asp-for="Address"></label>
+    <input asp-for="Address" />
+    <br />
+
+    <label asp-for="Phone"></label>
+    <input asp-for="Phone" />
+    <br />
+
+    <label asp-for="PizzaName"></label>
+    <input asp-for="PizzaName" />
+    <br />
+
+    <label asp-for="Size"></label>
+    <select asp-for="Size" asp-items="Html.GetEnumSelectList<PizzaSize>()">
+        <option value="value" selected>Select size</option>
+    </select>
+    <br />
+
+    <input type="submit" value="Order pizza" class="btn btn-success" />
+</form>
