@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "mo4AZYHXLUbLG7V/uHUUXlsH0t456KNMTZlTWRIYoHcuxM+4c6O3sGegsi1+gqr+UayngVSdPsB7O4nreGaytQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\irina\\Desktop\\Development\\Back end\\skwd8-niwd1-wdel4\\LamazonApp\\SEDC.Lamazon\\SEDC.Lamazon.WebModels\\SEDC.Lamazon.WebModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\irina\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\irina\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\irina\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\irina\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\irina\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\irina\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\irina\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
